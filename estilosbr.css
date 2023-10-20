@@ -1,0 +1,74 @@
+#imagem_fundo {
+    background-image: url("IMAGENS PARA TCC/brasil.jpg"); /* Define a imagem de fundo para o elemento */
+    background-size: cover; /* Redimensiona a imagem para preencher todo o espaço disponível */
+    background-position: center; /* Centraliza a imagem de fundo */
+    position: fixed; /* Define a posição fixa para o elemento */
+    top: 0; /* Posiciona o elemento no topo da tela */
+    left: 0; /* Posiciona o elemento no canto esquerdo da tela */
+    width: 100%; /* Define a largura do elemento como 100% da largura do pai */
+    height: 100%; /* Define a altura do elemento como 100% da altura do pai */
+    z-index: -1; /* Define a ordem de empilhamento do elemento em relação aos outros elementos */
+}
+
+#imagem_fundo::before {
+    content: ""; /* Adiciona conteúdo vazio ao pseudo-elemento */
+    display: block; /* Exibe o pseudo-elemento como um bloco */
+    position: absolute; /* Define a posição absoluta para o pseudo-elemento */
+    top: 0; /* Posiciona o pseudo-elemento no topo do elemento pai */
+    left: 0; /* Posiciona o pseudo-elemento no canto esquerdo do elemento pai */
+    width: 100%; /* Define a largura do pseudo-elemento como 100% do elemento pai */
+    height: 100%; /* Define a altura do pseudo-elemento como 100% do elemento pai */
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo com 50% de opacidade */
+    z-index: 1; /* Define a ordem de empilhamento do pseudo-elemento em relação aos outros elementos */
+}
+
+.titulo{
+    font-family: 'Bebas Neue', sans-serif;
+    color:#CBD92A;
+    font-size: 50px;
+    text-align: center;
+}
+.conteudo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+#central{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+.linha{
+    background-color: #cecece; 
+    width: 203%; 
+    transform: translateX(-50%);
+    height: 20px;
+}
+#button-jogar {
+    background-color: #DA621F; /* Definindo a cor de fundo */
+    font-size: 30px; /* Definindo o tamanho da fonte para deixar o botão maior */
+    padding: 35px 20px; /* Aumentando o espaçamento interno para melhor aparência */
+    border: none; /* Removendo a borda */
+    color: white; /* Definindo a cor do texto para branco */
+    cursor: pointer; /* Mudando o cursor para indicar que o elemento é clicável */
+    border-radius: 20px; /* Aumentando o valor do border-radius para deixar as bordas mais arredondadas */
+    position: absolute; /* Definindo a posição absoluta para permitir um posicionamento preciso */
+    margin-top: 1%;
+    left: 50%; /* Defina a posição horizontal no centro da página */
+    transform: translateX(-50%); /* Centralize horizontalmente o botão usando transformação */
+    text-align: center; /* Centralize o texto horizontalmente dentro do botão */
+
+}
+
+#convite{
+    margin-top: 17%;
+    text-align: center;
+}
+
+@media (max-width: 520px){
+    #button-jogar{
+        max-width: 200px;
+        font-size: 20px;
+    }
+}

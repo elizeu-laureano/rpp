@@ -1,0 +1,607 @@
+/* Estilizando o fundo com uma imagem de uma guitarra */
+
+/* Aplicando a imagem de fundo */
+#background-image {
+    background-image: url("IMAGENS PARA TCC/braço guitarra.jpg");
+    background-size: cover; /* A imagem de fundo cobrirá todo o elemento */
+    background-position: center; /* A imagem será centralizada no elemento */
+    position: fixed; /* O elemento será fixado na posição enquanto a página é rolada */
+    top: 0;
+    left: 0;
+    width: 100%; /* O elemento ocupará toda a largura da janela */
+    height: 100%; /* O elemento ocupará toda a altura da janela */
+    z-index: -1; /* Definindo uma camada de z-index inferior para o fundo */
+}
+
+/* Estilos do botão */
+.botao_casa {
+    /* Define a largura e altura do botão */
+    width: 65px;
+    height: 65px;
+    /* Adiciona a imagem de fundo ao botão */
+    background-image: url("IMAGENS PARA TCC/imagem_casa.jpg");
+    /* Centraliza a imagem horizontal e verticalmente no botão */
+    background-position: center;
+    /* Define o tamanho da imagem */
+    background-size: cover;
+    /* Remove a borda do botão */
+    border: none;
+    /* Define o cursor do mouse como um ponteiro para indicar que o botão é clicável */
+    cursor: pointer;
+    /* Torna o fundo do botão transparente */
+    background-color: transparent;
+    /* Posiciona o botão sobre o texto */
+    position: relative;
+    /* Desloca o botão 20 pixels acima em relação ao seu posicionamento normal */
+    top: -10px;
+    /* Desloca o botão 20 pixels à direita em relação ao seu posicionamento normal */
+    left: 20px;
+  z-index: 2; /* Definindo uma camada de z-index superior para o botão */
+}
+
+/* Criando uma sobreposição de cor sobre a imagem de fundo */
+
+/* Pseudoelemento ::before para criar a sobreposição */
+#background-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Define a cor de sobreposição (preto) e o nível de transparência (0.6) */
+    z-index: 1; /* Colocando a sobreposição acima do fundo (z-index: -1) */
+}
+
+/* Estilizando os títulos h1 e h2 */
+
+/* Estilo para o título h1 */
+h1 {
+    color: #CBD92A; /* Cor do texto será amarelo (#CBD92A) */
+    font-family: 'Bebas Neue', sans-serif; /* Definindo a fonte do texto */
+}
+
+/* Estilo para o título h2 */
+h2 {
+    color: white; /* Cor do texto será branca */
+    position: absolute; /* Os títulos h2 terão uma posição absoluta */
+    font-family: arial, sans-serif; /* Definindo a fonte do texto */
+    font-size: 18px; /* Definindo o tamanho da fonte do texto */
+    z-index: 2; /* Colocando os títulos acima do fundo (z-index: -1) */
+}
+
+/* Estilizando a seção de introdução */
+
+.h2-1 {
+    background-color: #383735; /* Define a cor de fundo da seção como cinza escuro (#383735) */
+    text-align: center; /* Centraliza o conteúdo horizontalmente dentro da seção */
+    padding: 20px; /* Adiciona um espaçamento interno de 20 pixels em todos os lados do conteúdo */
+    position: absolute; /* Define a posição da seção como absoluta */
+    top: -4%; /* Desloca a seção 2% acima em relação à posição normal */
+    left: 0; /* Alinha a seção à esquerda */
+    right: 0; /* Alinha a seção à direita */
+    z-index: 1; /* Define uma camada de z-index superior para a seção, permitindo que ela fique acima de outros elementos */
+    color: #CBD92A; /* Cor do texto será amarelo (#CBD92A) */
+    font-family: 'Bebas Neue', sans-serif; /* Definindo a fonte do texto */
+    font-size: 30px;
+}
+
+.linha{
+    color: #CBD92A;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilo para o segundo elemento h2 na introdução */
+.h2-2 {
+    top: 15%; /* Posicionando o elemento 25% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Centralizando horizontalmente e verticalmente o elemento */
+}
+
+/* Estilo para o terceiro elemento h2 na introdução */
+.h2-3 {
+    top: 39%; /* Posicionando o elemento 39% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Centralizando horizontalmente e verticalmente o elemento */
+}
+
+/* Estilizando o conteúdo 1 */
+
+/* Estilo para o primeiro elemento h1 */
+.h1-1 {
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 65%; /* Posicionando o elemento 65% de distância do topo do elemento pai */
+    left: 20%; /* Posicionando o elemento 20% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Centralizando horizontalmente e verticalmente o elemento */
+    font-size: 70px; /* Definindo o tamanho da fonte do elemento */
+    z-index: 2; /* Definindo o índice z para posicionar acima de outros elementos */
+}
+
+/* Estilo para o quarto elemento h2 */
+.h2-4 {
+    top: 70%; /* Posicionando o elemento 70% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-1%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+}
+
+/* Estilo para o elemento que funciona como uma linha horizontal (<hr>) */
+
+.h2-5 {
+    background-color: #cecece; /* Alterando a cor de fundo para uma cor mais contrastante (#cecece) */
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 100%; /* Posicionando o elemento 100% de distância do topo do elemento pai */
+    width: 200%; /* Definindo a largura do elemento como o dobro da largura do elemento pai */
+    transform: translateX(-50%); /* Centralizando horizontalmente o elemento */
+    border: none; /* Removendo a borda do elemento */
+    height: 20px; /* Definindo a altura do elemento */
+    box-sizing: content-box; /* Ajustando a altura do elemento para o tamanho do conteúdo (sem borda ou preenchimento extra) */
+}
+
+
+/* Estilizando o conteúdo 2 */
+
+/* Estilo para o segundo título h1 */
+#h1-2 {
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 160%; /* Posicionando o elemento 160% de distância do topo do elemento pai */
+    left: 70%; /* Posicionando o elemento 70% de distância da esquerda do elemento pai */
+    transform: translate(-30%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+    font-size: 70px; /* Definindo o tamanho da fonte do elemento */
+    z-index: 2; /* Definindo o índice z para posicionar acima de outros elementos */
+}
+
+/* Estilo para o sexto elemento h2 */
+.h2-6 {
+    top: 160%; /* Posicionando o elemento 160% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    width: 50%; /* Definindo a largura do elemento */
+    transform: translate(-90%, -40%); /* Ajustando a posição horizontalmente e verticalmente o elemento */
+}
+
+/* Estilo para o elemento que funciona como uma linha horizontal (<hr>) */
+
+.h2-7 {
+    background-color: #cecece; /* Alterando a cor de fundo para uma cor mais contrastante (#cecece) */
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 210%; /* Posicionando o elemento 210% de distância do topo do elemento pai */
+    width: 200%; /* Definindo a largura do elemento como o dobro da largura do elemento pai */
+    transform: translateX(-50%); /* Centralizando horizontalmente o elemento */
+    border: none; /* Removendo a borda do elemento */
+    height: 20px; /* Definindo a altura do elemento */
+    box-sizing: content-box; /* Ajustando a altura do elemento para o tamanho do conteúdo (sem borda ou preenchimento extra) */
+}
+
+/* Estilizando o conteúdo 3 */
+
+/* Estilo para o terceiro título h1 */
+#h1-3 {
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 250%; /* Posicionando o elemento 250% de distância do topo do elemento pai */
+    left: 20%; /* Posicionando o elemento 20% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+    font-size: 70px; /* Definindo o tamanho da fonte do elemento */
+    z-index: 2; /* Definindo o índice z para posicionar acima de outros elementos */
+}
+
+/* Estilo para o oitavo elemento h2 */
+.h2-8 {
+    top: 250%; /* Posicionando o elemento 250% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-1%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+}
+
+/* Estilo para o elemento que funciona como uma linha horizontal (<hr>) */
+
+.h2-9 {
+    background-color: #cecece; /* Alterando a cor de fundo para uma cor mais contrastante (#cecece) */
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 290%; /* Posicionando o elemento 290% de distância do topo do elemento pai */
+    width: 200%; /* Definindo a largura do elemento como o dobro da largura do elemento pai */
+    transform: translateX(-50%); /* Centralizando horizontalmente o elemento */
+    border: none; /* Removendo a borda do elemento */
+    height: 20px; /* Definindo a altura do elemento */
+    box-sizing: content-box; /* Ajustando a altura do elemento para o tamanho do conteúdo (sem borda ou preenchimento extra) */
+}
+
+/* Estilizando o conteúdo 4 */
+
+/* Estilo para o quarto título h1 */
+#h1-4 {
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 320%; /* Posicionando o elemento 320% de distância do topo do elemento pai */
+    left: 70%; /* Posicionando o elemento 70% de distância da esquerda do elemento pai */
+    transform: translate(-30%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+    font-size: 70px; /* Definindo o tamanho da fonte do elemento */
+    z-index: 2; /* Definindo o índice z para posicionar acima de outros elementos */
+}
+
+/* Estilo para o décimo elemento h2 */
+.h2-10 {
+    top: 320%; /* Posicionando o elemento 320% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    width: 50%; /* Definindo a largura do elemento */
+    transform: translate(-90%, -40%); /* Ajustando a posição horizontalmente e verticalmente o elemento */
+}
+
+/* Estilo para o elemento que funciona como uma linha horizontal (<hr>) */
+
+.h2-11 {
+    background-color: #cecece; /* Alterando a cor de fundo para uma cor mais contrastante (#cecece) */
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 350%; /* Posicionando o elemento 350% de distância do topo do elemento pai */
+    width: 200%; /* Definindo a largura do elemento como o dobro da largura do elemento pai */
+    transform: translateX(-50%); /* Centralizando horizontalmente o elemento */
+    border: none; /* Removendo a borda do elemento */
+    height: 20px; /* Definindo a altura do elemento */
+    box-sizing: content-box; /* Ajustando a altura do elemento para o tamanho do conteúdo (sem borda ou preenchimento extra) */
+}
+
+/* Estilizando o conteúdo de som */
+
+/* Estilo para o décimo segundo elemento h2 */
+.h2-12 {
+    top: 360%; /* Posicionando o elemento 360% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+    font-size: 25px; /* Definindo o tamanho da fonte do elemento */
+    color: #CBD92A;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilo para o décimo terceiro elemento h2 */
+.h2-13 {
+    top: 385%; /* Posicionando o elemento 385% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+}
+
+/* Estilo para a imagem "imagem_onda_ex1" */
+
+#imagem_onda_ex1 {
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 410%; /* Posicionando o elemento 410% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+    z-index: 2; /* Definindo o índice z para posicionar acima de outros elementos */
+    border: 2px solid #000; /* Adicionando uma borda com espessura de 2px e cor preta (#000) */
+    border-radius: 20px; /* Definindo o raio da borda para criar bordas arredondadas */
+}
+
+/* Estilo para o décimo quarto elemento h2 */
+.h2-14 {
+    top: 420%; /* Posicionando o elemento 420% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+}
+
+/* Estilo para a imagem "imagem_onda_ex2" */
+
+#imagem_onda_ex2 {
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 450%; /* Posicionando o elemento 450% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+    z-index: 2; /* Definindo o índice z para posicionar acima de outros elementos */
+    border: 3px solid #000; /* Adicionando uma borda com espessura de 3px e cor preta (#000) */
+    border-radius: 20px; /* Definindo o raio da borda para criar bordas arredondadas */
+}
+
+/* Estilo para o décimo quinto elemento h2 */
+.h2-15 {
+    top: 460%; /* Posicionando o elemento 460% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+}
+
+/* Estilo para o décimo sexto elemento h2 */
+.h2-16 {
+    top: 480%; /* Posicionando o elemento 480% de distância do topo do elemento pai */
+    left: 60%; /* Posicionando o elemento 60% de distância da esquerda do elemento pai */
+    transform: translate(-1%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+}
+
+/* Estilo para o décimo sétimo elemento h2 */
+.h2-17 {
+    top: 480%; /* Posicionando o elemento 480% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    width: 50%; /* Definindo a largura do elemento */
+    transform: translate(-95%, -40%); /* Ajustando a posição horizontalmente e verticalmente o elemento */
+}
+/* Estilizando o elemento que funciona como uma linha horizontal (<hr>) */
+
+/* Estilo para o décimo oitavo elemento h2 */
+.h2-18 {
+    background-color: #cecece; /* Alterando a cor de fundo para uma cor mais contrastante (#cecece) */
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 505%; /* Posicionando o elemento 505% de distância do topo do elemento pai */
+    width: 200%; /* Definindo a largura do elemento como o dobro da largura do elemento pai */
+    transform: translateX(-50%); /* Centralizando horizontalmente o elemento */
+    border: none; /* Removendo a borda do elemento */
+    height: 20px; /* Definindo a altura do elemento */
+    box-sizing: content-box; /* Ajustando a altura do elemento para o tamanho do conteúdo (sem borda ou preenchimento extra) */
+}
+
+/* Estilizando o conteúdo sobre altura */
+
+/* Estilo para o quinto título h1 */
+#h1-5 {
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 520%; /* Posicionando o elemento 520% de distância do topo do elemento pai */
+    left: 20%; /* Posicionando o elemento 20% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+    font-size: 70px; /* Definindo o tamanho da fonte do elemento */
+    z-index: 2; /* Definindo o índice z para posicionar acima de outros elementos */
+}
+
+/* Estilo para o décimo nono elemento h2 */
+.h2-19 {
+    top: 520%; /* Posicionando o elemento 520% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-1%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+}
+
+/* Estilo para o vigésimo elemento h2 */
+.h2-20 {
+    top: 530%; /* Posicionando o elemento 530% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-1%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+}
+
+/* Estilo para o vigésimo primeiro elemento h2 */
+.h2-21 {
+    top: 560%; /* Posicionando o elemento 560% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    width: 50%; /* Definindo a largura do elemento */
+    transform: translate(-70%, -40%); /* Ajustando a posição horizontalmente e verticalmente o elemento */
+    white-space: pre-line; /* Definindo a quebra de linha para respeitar as quebras inseridas no conteúdo */
+}
+
+/* Estilo para o vigésimo segundo elemento h2 */
+.h2-22 {
+    top: 560%; /* Posicionando o elemento 560% de distância do topo do elemento pai */
+    left: 60%; /* Posicionando o elemento 60% de distância da esquerda do elemento pai */
+    transform: translate(-1%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+    white-space: pre-line; /* Definindo a quebra de linha para respeitar as quebras inseridas no conteúdo */
+}
+  .seta {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgb(243, 8, 20); /* Cor da seta (pode ser alterada) */
+    top: 557%;
+    left: 47%;
+  }
+
+  .h2-23 {
+    top: 580%; /* Posicionando o elemento 385% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+  }
+
+  /*conteudo da direita*/
+  .h2-24 {
+    top: 600%; /* Posicionando o elemento 560% de distância do topo do elemento pai */
+    left: 60%; /* Posicionando o elemento 60% de distância da esquerda do elemento pai */
+    transform: translate(-1%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+}
+    /*conteudo da esquerda*/
+    .h2-25 {
+    top: 600%; /* Posicionando o elemento 560% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    width: 50%; /* Definindo a largura do elemento */
+    transform: translate(-65%, -40%); /* Ajustando a posição horizontalmente e verticalmente o elemento */
+}
+
+    .seta-2 {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgb(243, 8, 20); /* Cor da seta (pode ser alterada) */
+    top: 597%;
+    left: 47%;
+  }
+
+  /*conteudo da esquerda*/
+  .h2-26 {
+    top: 610%; /* Posicionando o elemento 560% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    width: 50%; /* Definindo a largura do elemento */
+    transform: translate(-65%, -40%); /* Ajustando a posição horizontalmente e verticalmente o elemento */
+    /*conteudo da direita*/
+  }
+  .h2-27 {
+    top: 610%; /* Posicionando o elemento 560% de distância do topo do elemento pai */
+    left: 60%; /* Posicionando o elemento 60% de distância da esquerda do elemento pai */
+    transform: translate(-1%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+}
+.seta-3 {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgb(243, 8, 20); /* Cor da seta (pode ser alterada) */
+    top: 607%;
+    left: 47%;
+  }
+
+  .h1-6{
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 640%; /* Posicionando o elemento 520% de distância do topo do elemento pai */
+    left: 20%; /* Posicionando o elemento 20% de distância da esquerda do elemento pai */
+    transform: translate(-40%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+    font-size: 70px; /* Definindo o tamanho da fonte do elemento */
+    z-index: 2; /* Definindo o índice z para posicionar acima de outros elementos */
+  }
+
+  .h2-28{
+    top: 635%; /* Posicionando o elemento 520% de distância do topo do elemento pai */
+    left: 60%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-1%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+  }
+
+  .h2-29{
+    top: 655%; /* Posicionando o elemento 520% de distância do topo do elemento pai */
+    left: 60%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-1%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+  }
+
+  /* Estilo para o elemento que funciona como uma linha horizontal (<hr>) */
+
+.h2-30 {
+    background-color: #cecece; /* Alterando a cor de fundo para uma cor mais contrastante (#cecece) */
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 620%; /* Posicionando o elemento 290% de distância do topo do elemento pai */
+    width: 200%; /* Definindo a largura do elemento como o dobro da largura do elemento pai */
+    transform: translateX(-50%); /* Centralizando horizontalmente o elemento */
+    border: none; /* Removendo a borda do elemento */
+    height: 20px; /* Definindo a altura do elemento */
+    box-sizing: content-box; /* Ajustando a altura do elemento para o tamanho do conteúdo (sem borda ou preenchimento extra) */
+}
+
+#imagem_onda_ex3 {
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 685%; /* Posicionando o elemento 410% de distância do topo do elemento pai */
+    left: 50%; /* Posicionando o elemento 50% de distância da esquerda do elemento pai */
+    transform: translate(-50%, -50%); /* Ajustando a posição horizontalmente e centralizando verticalmente o elemento */
+    z-index: 2; /* Definindo o índice z para posicionar acima de outros elementos */
+    border: 2px solid #000; /* Adicionando uma borda com espessura de 2px e cor preta (#000) */
+    border-radius: 20px; /* Definindo o raio da borda para criar bordas arredondadas */
+}
+
+.h3-1{
+    top: 710%;
+    color: white; /* Cor do texto será branca */
+    position: absolute; /* Os títulos h2 terão uma posição absoluta */
+    font-family: arial, sans-serif; /* Definindo a fonte do texto */
+    font-size: 18px; /* Definindo o tamanho da fonte do texto */
+    z-index: 2; /* Colocando os títulos acima do fundo (z-index: -1) */
+    left: 15%;
+}
+
+#button-jogar {
+    background-color: #DA621F; /* Definindo a cor de fundo */
+    font-size: 30px; /* Definindo o tamanho da fonte para deixar o botão maior */
+    padding: 35px 20px; /* Aumentando o espaçamento interno para melhor aparência */
+    border: none; /* Removendo a borda */
+    color: white; /* Definindo a cor do texto para branco */
+    cursor: pointer; /* Mudando o cursor para indicar que o elemento é clicável */
+    border-radius: 20px; /* Aumentando o valor do border-radius para deixar as bordas mais arredondadas */
+    position: absolute; /* Definindo a posição absoluta para permitir um posicionamento preciso */
+    bottom: 10%; /* Defina a posição vertical em relação à parte inferior da página */
+    left: 50%; /* Defina a posição horizontal no centro da página */
+    transform: translateX(-50%); /* Centralize horizontalmente o botão usando transformação */
+    top: 730%; /* Defina a posição vertical para baixo para deixar o botão mais afastado do topo */
+    text-align: center; /* Centralize o texto horizontalmente dentro do botão */
+    line-height: 10px; /* Ajuste a altura do texto para centralizá-lo verticalmente */
+}
+
+
+@media (max-width: 800px) {
+    .linha{
+        margin-left: 340px;
+        margin-top: -40px;
+    }
+    .h2-3{
+        margin-top: -50px;
+    }
+    .h2-6{
+        margin-top: -60px;
+    }
+    .h2-8{
+        margin-top: 25px;
+    }
+    .h2-12{
+        margin-top: 10px;
+        margin-left: -5px;
+        text-align: center;
+        width: 100%;
+    }
+    .h2-13{
+        margin-top: -15px;
+        text-align: center;
+        width: 100%;
+    }
+    #imagem_onda_ex1{
+        /* Define a largura máxima da imagem para 400 pixels, mas mantém a proporção original */
+        max-width: 300px;
+        margin-top: -35px;
+    }
+    .h2-14{
+        margin-top: -10px;
+        text-align: center;
+        width: 100%;
+    }
+    #imagem_onda_ex2{
+        max-width: 400px;
+        margin-top: -40px;
+    }
+    .h2-15{
+        margin-top: -50px;
+        text-align: center;
+        width: 100%;
+    }
+    .h2-20{
+        margin-top: 90px;
+    }
+    .h2-21{
+        margin-left: -80px;  
+        text-align: center;
+    }
+    .seta{
+        text-align: center;
+        margin-left: 20px;
+    }
+    .h2-23{
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .h2-25{
+        margin-left: -90px;  
+        text-align: center;
+        width: 40%;
+    }
+    .seta-2{
+        text-align: center;
+        margin-left: 20px;
+    }
+    .h2-26{
+        margin-left: -90px;  
+        text-align: center;
+        width: 40%;
+    }
+    .seta-3{
+        text-align: center;
+        margin-left: 20px;
+    }
+    .h1-6{
+        margin-left: 95px;
+        margin-top: -20px;
+        text-align: center;
+        width: 100%;
+    }
+    .h2-28{
+        margin-left: -250px;  
+        text-align: center;
+        width: 40%;
+        margin-top: 250px;
+    }
+    .h2-29{
+        text-align: center;
+        width: 40%;
+        margin-top: 130px;
+    }
+    }
+    #imagem_onda_ex3{
+        max-width: 450px;
+        margin-top: 120px;
+    }
+    #button-jogar{
+        max-width: 200px;
+        font-size: 20px;
+    }
+    
+

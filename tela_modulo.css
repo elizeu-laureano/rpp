@@ -1,0 +1,140 @@
+#imagem_fundo {
+    background-image: url("IMAGENS PARA TCC/tela 2.jpg"); /* Define a imagem de fundo para o elemento */
+    background-size: cover; /* Redimensiona a imagem para preencher todo o espaço disponível */
+    background-position: center; /* Centraliza a imagem de fundo */
+    position: fixed; /* Define a posição fixa para o elemento */
+    top: 0; /* Posiciona o elemento no topo da tela */
+    left: 0; /* Posiciona o elemento no canto esquerdo da tela */
+    width: 100%; /* Define a largura do elemento como 100% da largura do pai */
+    height: 100%; /* Define a altura do elemento como 100% da altura do pai */
+    z-index: -1; /* Define a ordem de empilhamento do elemento em relação aos outros elementos */
+}
+
+#imagem_fundo::before {
+    content: ""; /* Adiciona conteúdo vazio ao pseudo-elemento */
+    display: block; /* Exibe o pseudo-elemento como um bloco */
+    position: absolute; /* Define a posição absoluta para o pseudo-elemento */
+    top: 0; /* Posiciona o pseudo-elemento no topo do elemento pai */
+    left: 0; /* Posiciona o pseudo-elemento no canto esquerdo do elemento pai */
+    width: 100%; /* Define a largura do pseudo-elemento como 100% do elemento pai */
+    height: 100%; /* Define a altura do pseudo-elemento como 100% do elemento pai */
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo com 50% de opacidade */
+    z-index: 1; /* Define a ordem de empilhamento do pseudo-elemento em relação aos outros elementos */
+}
+
+.ondas_sonoras {
+    width: 300px; /* Define a largura do elemento */
+    height: 200px; /* Define a altura do elemento */
+    left: 20%; /* Posiciona o elemento com um deslocamento de 20% da largura do pai em relação ao canto esquerdo */
+    top: 20%; /* Posiciona o elemento com um deslocamento de 20% da altura do pai em relação ao topo */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+    border: none; /* Remove a borda do elemento */
+    background: transparent; /* Define o fundo como transparente */
+    display: flex; /* Define o elemento como um contêiner flexível */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    position: absolute; /* Define a posição absoluta para o elemento */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar o mouse sobre o elemento */
+}
+
+.ondas_sonoras img {
+    width: 100%; /* Define a largura da imagem como 100% do elemento pai */
+    height: auto; /* Mantém a proporção original da altura da imagem */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+}
+
+.container {
+    display: flex; /* Define o elemento como um contêiner flexível */
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.legenda {
+    font-family: Arial, Helvetica, sans-serif; /* Define a família da fonte */
+    margin-top: 10px; /* Define um espaçamento de 10px acima do elemento */
+    font-size: 25px; /* Define o tamanho da fonte */
+    color: rgb(255, 251, 251); /* Define a cor do texto */
+}
+
+.partitura {
+    width: 300px; /* Define a largura do elemento */
+    height: 200px; /* Define a altura do elemento */
+    right: 20%; /* Posiciona o elemento com um deslocamento de 20% da largura do pai em relação ao canto direito */
+    top: 20%; /* Posiciona o elemento com um deslocamento de 20% da altura do pai em relação ao topo */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+    border: none; /* Remove a borda do elemento */
+    background: transparent; /* Define o fundo como transparente */
+    display: flex; /* Define o elemento como um contêiner flexível */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    position: absolute; /* Define a posição absoluta para o elemento */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar o mouse sobre o elemento */
+}
+
+.partitura img {
+    width: 100%; /* Define a largura da imagem como 100% do elemento pai */
+    height: auto; /* Mantém a proporção original da altura da imagem */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+}
+
+.estilosbr {
+    width: 300px; /* Define a largura do elemento */
+    height: 200px; /* Define a altura do elemento */
+    left: 20%; /* Posiciona o elemento com um deslocamento de 20% da largura do pai em relação ao canto esquerdo */
+    top: 60%; /* Posiciona o elemento com um deslocamento de 60% da altura do pai em relação ao topo */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+    border: none; /* Remove a borda do elemento */
+    background: transparent; /* Define o fundo como transparente */
+    display: flex; /* Define o elemento como um contêiner flexível */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    position: absolute; /* Define a posição absoluta para o elemento */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar o mouse sobre o elemento */
+}
+
+.estilosbr img {
+    width: 100%; /* Define a largura da imagem como 100% do elemento pai */
+    height: auto; /* Mantém a proporção original da altura da imagem */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+}
+
+.acordes {
+    width: 300px; /* Define a largura do elemento */
+    height: 200px; /* Define a altura do elemento */
+    right: 20%; /* Posiciona o elemento com um deslocamento de 20% da largura do pai em relação ao canto direito */
+    top: 60%; /* Posiciona o elemento com um deslocamento de 60% da altura do pai em relação ao topo */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+    border: none; /* Remove a borda do elemento */
+    background: transparent; /* Define o fundo como transparente */
+    display: flex; /* Define o elemento como um contêiner flexível */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    position: absolute; /* Define a posição absoluta para o elemento */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar o mouse sobre o elemento */
+    
+}
+
+.acordes img {
+    width: 100%; /* Define a largura da imagem como 100% do elemento pai */
+    height: auto; /* Mantém a proporção original da altura da imagem */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+}
+
+@media (max-width: 1000px) {
+    .ondas_sonoras,
+    .partitura,
+    .estilosbr,
+    .acordes {
+        width: 100%; /* Define a largura para ocupar 100% da largura da tela */
+        max-width: 200px; /* Define uma largura máxima para não ficarem muito grandes */
+        margin-bottom: 10px; /* Adicione um espaçamento entre os botões */
+        position: static; /* Volte para a posição normal */
+        top: auto; /* Remova o posicionamento em relação ao topo */
+        left: auto; /* Remova o posicionamento em relação ao canto esquerdo */
+        right: auto; /* Remova o posicionamento em relação ao canto direito */
+    }
+}

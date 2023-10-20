@@ -1,0 +1,239 @@
+img{
+    border: 6px;
+    color: #000;
+}
+
+#background-image {
+    background-image: url("IMAGENS PARA TCC/acordes_fundo.jpg");
+    background-size: cover; /* A imagem de fundo cobrirá todo o elemento */
+    background-position: center; /* A imagem será centralizada no elemento */
+    position: fixed; /* O elemento será fixado na posição enquanto a página é rolada */
+    top: 0;
+    left: 0;
+    width: 100%; /* O elemento ocupará toda a largura da janela */
+    height: 100%; /* O elemento ocupará toda a altura da janela */
+    z-index: -1; /* Definindo uma camada de z-index inferior para o fundo */
+}
+
+#background-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Define a cor de sobreposição (preto) e o nível de transparência (0.6) */
+    z-index: 1; /* Colocando a sobreposição acima do fundo (z-index: -1) */
+}
+
+#titulo_pg {
+    color:#CBD92A ;
+    text-align: center;
+}
+.titulo{
+    font-family: 'Bebas Neue', sans-serif;
+    color:#CBD92A;
+    font-size: 50px;
+    text-align: center;
+}
+.legenda {
+    font-family: Arial, Helvetica, sans-serif; /* Define a família da fonte */
+    margin-top: -110px; /* Define um espaçamento de 10px acima do elemento */
+    font-size: 25px; /* Define o tamanho da fonte */
+    color:#CBD92A;
+    font-size: 28px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.conteudo{
+    color: white;
+    font-size: 20px;
+}
+
+#cromatica img {
+    width: 100%; /* Define a largura da imagem como 100% do elemento pai */
+    height: auto; /* Mantém a proporção original da altura da imagem */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+}
+
+#cromatica {
+    width: 600px; /* Define a largura do elemento */
+    height: 400px; /* Define a altura do elemento */
+    right: 65%; /* Posiciona o elemento com um deslocamento de 20% da largura do pai em relação ao canto direito */
+    top: 20%; /* Posiciona o elemento com um deslocamento de 20% da altura do pai em relação ao topo */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+    border: none; /* Remove a borda do elemento */
+    background: transparent; /* Define o fundo como transparente */
+    display: flex; /* Define o elemento como um contêiner flexível */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+#cont1{
+    margin-top: -12%;
+    margin-right: 6%;
+    margin-left: 40%;
+}
+
+#h2-5 {
+    background-color: #cecece; /* Alterando a cor de fundo para uma cor mais contrastante (#cecece) */
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    margin-top: 10%; /* Posicionando o elemento 100% de distância do topo do elemento pai */
+    width: 200%; /* Definindo a largura do elemento como o dobro da largura do elemento pai */
+    transform: translateX(-50%); /* Centralizando horizontalmente o elemento */
+    border: none; /* Removendo a borda do elemento */
+    height: 20px; /* Definindo a altura do elemento */
+    box-sizing: content-box; /* Ajustando a altura do elemento para o tamanho do conteúdo (sem borda ou preenchimento extra) */
+}
+
+#maiorn {
+    width: 600px; /* Define a largura do elemento */
+    height: 400px; /* Define a altura do elemento */
+    right: 65%; /* Posiciona o elemento com um deslocamento de 20% da largura do pai em relação ao canto direito */
+    margin-left: 60%;
+    margin-top: 12%; /* Posiciona o elemento com um deslocamento de 20% da altura do pai em relação ao topo */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+    border: none; /* Remove a borda do elemento */
+    background: transparent; /* Define o fundo como transparente */
+    display: flex; /* Define o elemento como um contêiner flexível */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+
+}
+#maiorn img {
+    width: 100%; /* Define a largura da imagem como 100% do elemento pai */
+    height: auto; /* Mantém a proporção original da altura da imagem */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+}
+
+#legenda_maior{
+    margin-top: -15%;
+}
+#cont2{
+    margin-top: -15%;
+    margin-right: 40%;
+    margin-left: 6%;
+}
+#h2-6 {
+    background-color: #cecece; /* Alterando a cor de fundo para uma cor mais contrastante (#cecece) */
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    margin-top: 10%; /* Posicionando o elemento 100% de distância do topo do elemento pai */
+    width: 200%; /* Definindo a largura do elemento como o dobro da largura do elemento pai */
+    transform: translateX(-50%); /* Centralizando horizontalmente o elemento */
+    border: none; /* Removendo a borda do elemento */
+    height: 20px; /* Definindo a altura do elemento */
+    box-sizing: content-box; /* Ajustando a altura do elemento para o tamanho do conteúdo (sem borda ou preenchimento extra) */
+}
+
+#acordes{
+    margin-top: 15%;
+}
+#cont3{
+    text-align: center;
+}
+
+#button-jogar {
+    background-color: #DA621F; /* Definindo a cor de fundo */
+    font-size: 30px; /* Definindo o tamanho da fonte para deixar o botão maior */
+    padding: 35px 20px; /* Aumentando o espaçamento interno para melhor aparência */
+    border: none; /* Removendo a borda */
+    color: white; /* Definindo a cor do texto para branco */
+    cursor: pointer; /* Mudando o cursor para indicar que o elemento é clicável */
+    border-radius: 20px; /* Aumentando o valor do border-radius para deixar as bordas mais arredondadas */
+    position: absolute; /* Definindo a posição absoluta para permitir um posicionamento preciso */
+    margin-top: 1%;
+    left: 50%; /* Defina a posição horizontal no centro da página */
+    transform: translateX(-50%); /* Centralize horizontalmente o botão usando transformação */
+    text-align: center; /* Centralize o texto horizontalmente dentro do botão */
+
+}
+
+#convite{
+    margin-top: 17%;
+    text-align: center;
+}
+
+@media (max-width: 1600px){
+    #cont1{
+        margin-top: -6%;
+        margin-right: 6%;
+        margin-left: 10%;
+    }
+    #cromatica{
+        max-width: 100%;
+        margin-left: 30%;
+    }
+    #maiorn{
+        margin-top: 10%;
+        margin-left: 30%;
+    }
+    #cont2{
+        margin-top: -8%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 1000px){
+
+    #cromatica{
+        max-width: 100%;
+        margin-left: 20%;
+    }
+    #maiorn{
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+
+}
+
+@media (max-width: 800px){
+
+    #cromatica{
+        max-width: 100%;
+        margin-left: 5%;
+    }
+    #maiorn{
+        margin-left: 5%;
+    }
+}
+@media (max-width: 700px){
+    #maiorn{
+        max-width: 100%;
+        margin-left: -1;
+    }
+}
+
+@media (max-width: 600px){
+
+    #cromatica{
+        max-width: 100%;
+        margin-left: 2%;
+    }
+    #maiorn{
+        margin-left: -1%;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 520px){
+    #cromatica{
+        max-width: 100%;
+        margin-left: 1%;
+    }
+    #maiorn{
+        max-width: 100%
+    }
+    #legenda_maior{
+        margin-top: -17%;
+    }
+    #button-jogar{
+        max-width: 200px;
+        font-size: 20px;
+    }
+}

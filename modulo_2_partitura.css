@@ -1,0 +1,518 @@
+#imagem_fundo {
+    background-image: url("IMAGENS PARA TCC/fundo_pentagrama.jpg");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#imagem_fundo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de sobreposição e o nível de transparência */
+    z-index: 1;
+}
+
+#titulo_pg {
+    color:#CBD92A ;
+    text-align: center;
+}
+
+.legenda {
+    color:#CBD92A ;
+    font-size: 33px; /* Define o tamanho da fonte */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -75%;
+}
+
+.conteudo{
+    color: white;
+    font-size: 20px;
+}
+
+#pauta {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    border: none;
+    align-items: center; 
+    flex-direction: column; 
+    justify-content: center;
+    position: absolute; 
+    left: 5%;
+}
+
+#pauta img {
+    width: 100%; /* Define a largura da imagem como 100% do elemento pai */
+    height: auto; /* Mantém a proporção original da altura da imagem */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+}
+
+#cont1{
+    margin-top: 10%;
+    text-align: center;
+    margin-left: 30%;
+}
+
+#h2-5 {
+    background-color: #cecece; /* Alterando a cor de fundo para uma cor mais contrastante (#cecece) */
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 45%; /* Posicionando o elemento 100% de distância do topo do elemento pai */
+    width: 200%; /* Definindo a largura do elemento como o dobro da largura do elemento pai */
+    transform: translateX(-50%); /* Centralizando horizontalmente o elemento */
+    border: none; /* Removendo a borda do elemento */
+    height: 20px; /* Definindo a altura do elemento */
+    box-sizing: content-box; /* Ajustando a altura do elemento para o tamanho do conteúdo (sem borda ou preenchimento extra) */
+}
+
+#notas {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    border: none;
+    align-items: center; 
+    flex-direction: column; 
+    justify-content: center;
+    position: absolute; 
+    right: 5%;
+    top: 40%;
+}
+
+#notas img {
+    width: 100%; /* Define a largura da imagem como 100% do elemento pai */
+    height: auto; /* Mantém a proporção original da altura da imagem */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+}
+
+#legenda_notas{
+    margin-top: -80%;
+}
+
+#cont2{
+    margin-top: 10%;
+    text-align: center;
+    margin-right: 30%;
+}
+#h2-6{
+    background-color: #cecece; /* Alterando a cor de fundo para uma cor mais contrastante (#cecece) */
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 92%; /* Posicionando o elemento 100% de distância do topo do elemento pai */
+    width: 200%; /* Definindo a largura do elemento como o dobro da largura do elemento pai */
+    transform: translateX(-50%); /* Centralizando horizontalmente o elemento */
+    border: none; /* Removendo a borda do elemento */
+    height: 20px; /* Definindo a altura do elemento */
+    box-sizing: content-box; /* Ajustando a altura do elemento para o tamanho do conteúdo (sem borda ou preenchimento extra) */
+}
+#claves {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    border: none;
+    align-items: center; 
+    flex-direction: column; 
+    justify-content: center;
+    position: absolute; 
+    left: 5%;
+    top: 90%;
+}
+#claves img {
+    width: 100%; /* Define a largura da imagem como 100% do elemento pai */
+    height: auto; /* Mantém a proporção original da altura da imagem */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+}
+#legenda_claves{
+    margin-top: -85%;
+}
+#cont3{
+    margin-top: 20%;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 30%;
+}
+#h2-7{
+    background-color: #cecece; /* Alterando a cor de fundo para uma cor mais contrastante (#cecece) */
+    position: absolute; /* Posicionando o elemento de forma absoluta */
+    top: 135%; /* Posicionando o elemento 100% de distância do topo do elemento pai */
+    width: 200%; /* Definindo a largura do elemento como o dobro da largura do elemento pai */
+    transform: translateX(-50%); /* Centralizando horizontalmente o elemento */
+    border: none; /* Removendo a borda do elemento */
+    height: 20px; /* Definindo a altura do elemento */
+    box-sizing: content-box; /* Ajustando a altura do elemento para o tamanho do conteúdo (sem borda ou preenchimento extra) */
+}
+#penta{
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    border: none;
+    align-items: center; 
+    flex-direction: column; 
+    justify-content: center;
+    position: absolute; 
+    left: 5%;
+    top: 140%;
+    margin-left: 70%;
+}
+#penta img {
+    width: 100%; /* Define a largura da imagem como 100% do elemento pai */
+    height: auto; /* Mantém a proporção original da altura da imagem */
+    border-radius: 20px; /* Define o raio da borda para criar bordas arredondadas */
+}
+#legenda_penta{
+    margin-top: -80%;
+}
+#cont4{
+    margin-top: 17%;
+    text-align: center;
+    margin-right: 40%;
+    margin-left: 10%;
+}
+#button-jogar {
+    background-color: #DA621F; /* Definindo a cor de fundo */
+    font-size: 30px; /* Definindo o tamanho da fonte para deixar o botão maior */
+    padding: 35px 20px; /* Aumentando o espaçamento interno para melhor aparência */
+    border: none; /* Removendo a borda */
+    color: white; /* Definindo a cor do texto para branco */
+    cursor: pointer; /* Mudando o cursor para indicar que o elemento é clicável */
+    border-radius: 20px; /* Aumentando o valor do border-radius para deixar as bordas mais arredondadas */
+    position: absolute; /* Definindo a posição absoluta para permitir um posicionamento preciso */
+    margin-top: 1%;
+    left: 50%; /* Defina a posição horizontal no centro da página */
+    transform: translateX(-50%); /* Centralize horizontalmente o botão usando transformação */
+    text-align: center; /* Centralize o texto horizontalmente dentro do botão */
+
+}
+
+#convite{
+    margin-top: 17%;
+    text-align: center;
+}
+
+@media (max-width: 1600px){
+    #cont2{
+        margin-top: 20%;
+        margin-right: 35%;
+    }
+    #notas{
+        margin-top: 7%;
+    }
+    
+}
+
+@media (max-width: 1300px){
+    #pauta {
+        text-align: center;
+        margin-top: auto;
+        margin-left: 10%;
+        
+    }
+    #cont1{
+        text-align: center;
+        margin-top: 400px;
+        margin-left: 4%;
+    }
+    #h2-5{
+        margin-top: 15%;
+    }
+    #notas{
+        margin-top:20%;
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+    #cont2{
+        margin-top: 40%;
+        margin-right: 1%;
+
+    }
+    #h2-6{
+        margin-top:30% ;
+    }
+    #claves{
+        margin-top:30%;
+        margin-left: 30%;  
+    }
+    #cont3{
+        margin-top: 40%;
+        margin-right: 30%; 
+    }
+    #h2-7{
+        margin-top: 55%;
+    }
+    #penta{
+        margin-top: 50%;
+        margin-left: 30%;
+    }
+    #cont4{
+    margin-top: 30%;
+    text-align: center;
+    margin-right: 30%;
+    margin-left: 20%;
+}
+}
+
+@media (max-width: 1100px){
+    #h2-5{
+       margin-top: 20%;
+    }
+    #notas{
+        margin-top:30%;
+        margin-right: 40%;
+    }
+    #cont2{
+        margin-top: 50%;
+    }
+    #h2-6{
+        margin-top:45% ;
+    }
+    #claves{
+        margin-top:45%;
+        margin-left: 30%;
+    }  
+    #h2-7{
+        margin-top: 70%;
+    }
+        #penta{
+        margin-top: 68%;
+        margin-left: 30%;
+    }
+    #cont4{
+    margin-top: 45%;
+    text-align: center;
+    margin-right: 30%;
+    margin-left: 20%;
+    }
+}
+
+
+@media (max-width: 950px){
+    #h2-5{
+       margin-top: 25%;
+    }
+    #notas{
+        margin-top:30%;
+        margin-right: 25%;
+    }
+    #h2-6{
+        margin-top:53% ;
+    }
+    #claves{
+        margin-top:50%;
+        margin-left: 30%;
+    }  
+    #cont3{
+        margin-top: 50%;
+        margin-right: 30%; 
+    }
+    #h2-7{
+        margin-top: 90%;
+    }
+    #penta{
+        margin-top: 90%;
+        margin-left: 30%;
+    }
+    #cont4{
+    margin-top: 60%;
+    text-align: center;
+    margin-right: 30%;
+    margin-left: 20%;
+    }
+}
+
+@media (max-width: 850px){
+    #h2-5{
+       margin-top: 35%;
+    }
+    #notas{
+        margin-top:34%;
+        margin-right: 25%;
+    }
+    #h2-6{
+        margin-top:52% ;
+    }
+    #h2-6{
+        margin-top:60% ;
+    }
+    #claves{
+        margin-top:60%;
+        margin-left: 30%;
+    } 
+    #cont3{
+        margin-top: 55%;
+        margin-right: 30%; 
+    }
+    #h2-7{
+        margin-top: 100%;
+    }
+
+}
+@media (max-width: 800px){
+    #h2-6{
+        margin-top:70% ;
+    }
+    #claves{
+        margin-top:70%;
+        margin-left: 20%;
+    } 
+    #cont3{
+        margin-top: 69%;
+        margin-right: 30%; 
+    }
+    #h2-7{
+        margin-top: 130%;
+    }
+    #penta{
+        margin-top: 130%;
+        margin-left: 20%;
+    }
+    #cont4{
+    margin-top: 85%;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    }
+}
+
+@media (max-width: 700px){
+    #h2-5{
+       margin-top: 45%;
+    }
+    #notas{
+        margin-top:50%;
+        margin-right: 25%;
+    }
+    #cont2{
+        margin-top: 70%;
+    }
+    #h2-6{
+        margin-top:87% ;
+    }
+    #h2-7{
+        margin-top: 150%;
+    }
+    #penta{
+        margin-top: 168%;
+        margin-left: 20%;
+    }
+}
+@media (max-width: 700px){
+    #h2-6{
+        margin-top:95% ;
+    }
+    #claves{
+        margin-top:90%;
+        margin-left: 20%;
+    }  
+    #h2-7{
+        margin-top: 175%;
+    }
+}
+
+@media (max-width: 600px){
+    #h2-5{
+       margin-top: 50%;
+    }
+    #notas{
+        margin-top:55%;
+        margin-right: 25%;
+    }
+    #cont2{
+        margin-top: 75%;
+    }
+    #h2-6{
+        margin-top:115% ;
+    }
+    #claves{
+        margin-top:110%;
+        margin-left: 20%;
+    }  
+    #cont3{
+        margin-top: 75%;
+        margin-right: 20%; 
+    }
+    #h2-7{
+        margin-top: 190%;
+    }
+    #penta{
+        margin-top: 190%;
+        margin-left: 20%;
+    }
+}
+
+
+@media (max-width: 550px){
+    #h2-5{
+       margin-top: 67%;
+    }
+    #notas{
+        margin-top:70%;
+        margin-right: 25%;
+    }
+    #cont2{
+        margin-top: 80%;
+    }
+    #h2-6{
+        margin-top:135% ;
+    }
+    #claves{
+        margin-top:130%;
+        margin-left: 12%;
+    } 
+    #cont3{
+        margin-top: 80%;
+        margin-right: 20%; 
+    }
+    #h2-7{
+        margin-top: 210%;
+    }
+    #penta{
+        margin-top: 210%;
+        margin-left: 10%;
+    }
+
+}
+
+@media (max-width: 520px){
+    #h2-5{
+       margin-top: 75%;
+    }
+    #notas{
+        margin-top:72%;
+        margin-right: 8%;
+    }
+    #cont2{
+        margin-top: 70%;
+    }
+    #h2-6{
+        margin-top:145% ;
+    }
+    #claves{
+        margin-top:140%;
+        margin-left: 10%;
+    } 
+    #h2-7{
+        margin-top: 230%;
+    }
+    #penta{
+        margin-top: 220%;
+        margin-left: 10%;
+    }
+    #button-jogar{
+        max-width: 200px;
+        font-size: 20px;
+    }
+}
